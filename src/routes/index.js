@@ -6,8 +6,6 @@ import { Login } from '../pages/Login';
 import { Start } from '../pages/Fibonacci/Start';
 import { All } from '../pages/Fibonacci/All';
 
-
-
 import {
     HOME,
     LOGIN,
@@ -20,7 +18,7 @@ const Stack = createNativeStackNavigator();
 export default function Routes() {
   return (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName="LOGIN">
+        <Stack.Navigator initialRouteName={HOME}>
             <Stack.Screen name={HOME} component={Home} />
             <Stack.Screen name={LOGIN} component={Login} />
             <Stack.Screen name={START_FIBONACCI} component={Start} />
